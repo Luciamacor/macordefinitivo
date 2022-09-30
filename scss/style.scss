@@ -15,6 +15,33 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+.nosotrosmain{
+    .divh1{
+         background-color: #25ABB5;
+        h1{
+         padding:40px;
+      }
+    }
+    .divp{           margin-top: 50px;
+        p{
+            font-size: 20px;
+ 
+            margin-left: 270px;
+            margin-right: 270px;
+        }
+    }
+}
+.divinstitucionaltexto{
+    background-color:  #25ABB5;
+    padding: 70px;
+    h1{
+        margin-left: 20px;
+    }
+    p{
+        margin-left: 20px;
+        font-size: x-large;
+    }
+}
 .divinstitucional{
     display: flex;
     justify-content: center;
@@ -24,16 +51,69 @@ body {
         flex-direction: column;
         justify-content: center;
         margin: 20px;
+        text-align: center;
+        h2{
+            font-size: 20px;
+            font-weight: 530;
+            margin: 15px;
+         }
+        img{
+            border-radius: 50px;
+            border-top-right-radius: 0%;
+            border-bottom-left-radius: 0%;
+        } 
 }
+}
+.divalimenticiatexto{
+    background-color:  #25ABB5;
+    padding: 70px;
+    h1{
+        margin-left: 20px;
+    }
+    p{
+        margin-left: 20px;
+        font-size: x-large;
+    }
+}
+.divalimenticia{
+    display: flex;
+    justify-content: center;
+    margin:50px;        
+    flex-wrap: wrap;
+    div{
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+        text-align: center;
+     h2{
+        font-size: 20px;
+        font-weight: 530;
+        margin: 15px;
+
+     }
+}
+}
+.alimenticia{
+    border-radius: 50px;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+.divcontactotexto{
+    background-color:  #25ABB5;
+    padding: 70px;
+    h1{
+        margin-left: 20px;
+    }
+    p{
+        margin-left: 20px;
+        font-size: x-large;
+    }
 }
 .iframe{
-     margin: 20px;}
-.contactanos{
-    margin-top: 10px;
-    margin-bottom: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-       
+     margin-left: 50px;
+     margin-right: 50px;
+     margin-top: 20px;
 }
 .contacto-logos {
     display: flex;
@@ -44,7 +124,14 @@ body {
         display: flex;
         flex-direction: row; 
         align-items: center;
-        margin: 10px;
+        margin-left: 90px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: large;
+        font-weight: 500;
+        p{
+            margin: 5px;
+        }
  }
 }
 .edit{
@@ -61,13 +148,106 @@ body {
            flex-direction: row;
            width: 100%;
     }
+    .divp{
+        p{
+            margin: 10px;
+        }
+    }
 }
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 480px){
    .subtitulo{font-size: medium;}
    .toptitulo{font-size: medium;}
    .paralax{height:350px ;}
-   footer{ font-size: medium;}
    .nuestras-imagenes img{width: 100px;}
    .productos-imagenes img{width: 100px;}
-   .iframe{}
+   .iframe{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+   }
+   .divinstitucionaltexto{
+    padding: 30px;
+    h1{
+        margin-left: 10px;
+    }
+    p{
+        margin-left: 5px;
+        font-size: large;
+    }
+  }
+  .divalimenticiatexto{
+    padding: 30px;
+    h1{
+        margin-left: 10px;
+    }
+    p{
+        margin-left: 5px;
+        font-size: large;
+    }
+  }
+  .divcontactotexto{
+    padding: 30px;
+    h1{
+        margin-left: 10px;
+    }
+    p{
+        margin-left: 5px;
+        font-size: large;
+    }
+  }
+  .contacto-logos {
+    div{
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-weight: 500;
+        p{
+            margin: 5px;
+        }
+    }
+  }
+
+}
+@media only screen and (max-width: 600px){
+    .divinstitucionaltexto{
+        padding: 40px;
+        h1{
+            margin-left: 15px;
+        }
+        p{
+            margin-left: 10px;
+            font-size: large;
+        }
+    }
+    .divcontactotexto{
+        padding: 30px;
+        h1{
+            margin-left: 10px;
+        }
+        p{
+            margin-left: 5px;
+            font-size: large;
+        }
+      }
+      .divalimenticiatexto{
+        padding: 30px;
+        h1{
+            margin-left: 10px;
+        }
+        p{
+            margin-left: 5px;
+            font-size: large;
+        }
+      }
+}
+@media only screen and (min-width: 1550px){
+    .divalimenticia{ 
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .divinstitucional{ 
+        margin-left: 100px;
+        margin-right: 100px;
+    }
 }

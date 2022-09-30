@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
   min-height: 100vh;
@@ -33,23 +34,19 @@ footer {
 
 header nav {
   width: 100%;
+  background-color: #05062E;
 }
 header nav ul {
   width: 100%;
   justify-content: flex-end;
 }
-header nav .headernav {
-  background-color: #05062E;
-}
-header nav ul{ 
-  width: 100%;
-  justify-content: flex-end;}
-.logonav {
+header nav .logonav {
   width: 160px;
   height: 100%;
   display: inline;
   margin: 0%;
   padding: 0%;
+  border-radius: 5px;
 }
 header nav .hamburguesa {
   background-color: #AEAEB8;
@@ -70,33 +67,43 @@ header nav .divbarflex {
   flex-direction: row;
   justify-content: space-between;
 }
+
 footer {
-  font-size: 20px;
   background-color: #05062E;
-  color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-top: auto;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-footer p {
-  margin-left: 20px; 
-  margin-right: 20px;
-  margin-top: 5px;
-  margin-bottom:  5px;
+footer a:hover {
+  transition: 0, 5s;
+  transform: scale(1.25);
+}
+
+@media only screen and (max-width: 480px) {
+  footer img {
+    width: 40px;
+  }
 }
 .toptitulo {
   font-size: 20px;
   background-color: #25ABB5;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
+
 .subtitulo {
   font-size: 20px;
   background-color: #25ABB5;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+  position: sticky;
+  top: 100%;
+  margin-bottom: 0%;
 }
+
 .paralax {
   background-image: url(../imagenes/bodega.jpg);
   height: 600px;
@@ -106,11 +113,13 @@ footer p {
   background-size: cover;
   margin-bottom: 50px;
 }
+
 .nuestras {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .nuestras-imagenes {
   display: flex;
   flex-direction: row;
@@ -118,14 +127,11 @@ footer p {
   justify-content: center;
   margin: 30px;
 }
-.nuestrasmarcas {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+
 .nuestras-imagenes img {
   width: 200px;
 }
+
 .productos {
   display: flex;
   flex-direction: column;
@@ -143,23 +149,58 @@ footer p {
   flex-direction: column;
   align-items: center;
 }
-.productos .productos-imagenes img {
+.productos .productos-imagenes div img {
   width: 200px;
 }
-.divinstitucionaltexto{
+.productos .productos-imagenes div h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
 
+@media (min-width: 576px) {
+  .divp {
+    font-size: 50px;
+  }
+}
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.nosotrosmain .divh1 {
   background-color: #25ABB5;
 }
-.divinstitucionaltexto p{
-  font-size: x-large;
-  margin-left: 30px;
-  margin-top: 10px;
+.nosotrosmain .divh1 h1 {
+  padding: 40px;
 }
-.divinstitucionaltexto h1{
-  margin-left: 30px;
-  margin-top: 30px;
+.nosotrosmain .divp {
+  margin-top: 50px;
+}
+.nosotrosmain .divp p {
+  font-size: 20px;
+  margin-left: 270px;
+  margin-right: 270px;
+}
 
+.divinstitucionaltexto {
+  background-color: #25ABB5;
+  padding: 70px;
 }
+.divinstitucionaltexto h1 {
+  margin-left: 20px;
+}
+.divinstitucionaltexto p {
+  margin-left: 20px;
+  font-size: x-large;
+}
+
 .divinstitucional {
   display: flex;
   justify-content: center;
@@ -173,44 +214,70 @@ footer p {
   margin: 20px;
   text-align: center;
 }
+.divinstitucional div h2 {
+  font-size: 20px;
+  font-weight: 530;
+  margin: 15px;
+}
+.divinstitucional div img {
+  border-radius: 50px;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 0%;
+}
 
-.divalimenticiatexto{
-
+.divalimenticiatexto {
   background-color: #25ABB5;
+  padding: 70px;
 }
-.divalimenticiatexto p{
+.divalimenticiatexto h1 {
+  margin-left: 20px;
+}
+.divalimenticiatexto p {
+  margin-left: 20px;
   font-size: x-large;
-  margin-left: 30px;
-  margin-top: 10px;
 }
-.divalimenticiatexto h1{
-  margin-left: 30px;
-  margin-top: 30px;
 
-}
-.divalimenticia{
+.divalimenticia {
   display: flex;
   justify-content: center;
   margin: 50px;
   flex-wrap: wrap;
 }
-.divalimenticia div{
+.divalimenticia div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 20px;
   text-align: center;
 }
-.alimenticia{width: 100%;}
-.iframe {
-  margin: 20px;
+.divalimenticia div h2 {
+  font-size: 20px;
+  font-weight: 530;
+  margin: 15px;
 }
 
-.contactanos {
-  margin-top: 10px;
-  margin-bottom: 0px;
-  margin-left: 10px;
-  margin-right: 10px;
+.alimenticia {
+  border-radius: 50px;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 0%;
+}
+
+.divcontactotexto {
+  background-color: #25ABB5;
+  padding: 70px;
+}
+.divcontactotexto h1 {
+  margin-left: 20px;
+}
+.divcontactotexto p {
+  margin-left: 20px;
+  font-size: x-large;
+}
+
+.iframe {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
 }
 
 .contacto-logos {
@@ -223,11 +290,20 @@ footer p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 10px;
+  margin-left: 90px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: 500;
 }
+.contacto-logos div p {
+  margin: 5px;
+}
+
 .edit {
   margin: 20px;
 }
+
 @media only screen and (max-width: 768px) {
   body header {
     flex-direction: column;
@@ -240,8 +316,11 @@ footer p {
     flex-direction: row;
     width: 100%;
   }
+  .divp p {
+    margin: 10px;
+  }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 480px) {
   .subtitulo {
     font-size: medium;
   }
@@ -250,16 +329,99 @@ footer p {
   }
   .paralax {
     height: 350px;
-    width: 100%;
-  }
-  footer {
-    font-size: medium;
   }
   .nuestras-imagenes img {
     width: 100px;
   }
   .productos-imagenes img {
     width: 100px;
+  }
+  .iframe {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  .divinstitucionaltexto {
+    padding: 30px;
+  }
+  .divinstitucionaltexto h1 {
+    margin-left: 10px;
+  }
+  .divinstitucionaltexto p {
+    margin-left: 5px;
+    font-size: large;
+  }
+  .divalimenticiatexto {
+    padding: 30px;
+  }
+  .divalimenticiatexto h1 {
+    margin-left: 10px;
+  }
+  .divalimenticiatexto p {
+    margin-left: 5px;
+    font-size: large;
+  }
+  .divcontactotexto {
+    padding: 30px;
+  }
+  .divcontactotexto h1 {
+    margin-left: 10px;
+  }
+  .divcontactotexto p {
+    margin-left: 5px;
+    font-size: large;
+  }
+  .contacto-logos div {
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .contacto-logos div p {
+    margin: 5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .divinstitucionaltexto {
+    padding: 40px;
+  }
+  .divinstitucionaltexto h1 {
+    margin-left: 15px;
+  }
+  .divinstitucionaltexto p {
+    margin-left: 10px;
+    font-size: large;
+  }
+  .divcontactotexto {
+    padding: 30px;
+  }
+  .divcontactotexto h1 {
+    margin-left: 10px;
+  }
+  .divcontactotexto p {
+    margin-left: 5px;
+    font-size: large;
+  }
+  .divalimenticiatexto {
+    padding: 30px;
+  }
+  .divalimenticiatexto h1 {
+    margin-left: 10px;
+  }
+  .divalimenticiatexto p {
+    margin-left: 5px;
+    font-size: large;
+  }
+}
+@media only screen and (min-width: 1550px) {
+  .divalimenticia {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .divinstitucional {
+    margin-left: 100px;
+    margin-right: 100px;
   }
 }
 
