@@ -157,11 +157,6 @@ footer a:hover {
   font-weight: 500;
 }
 
-@media (min-width: 576px) {
-  .divp {
-    font-size: 50px;
-  }
-}
 * {
   margin: 0%;
   padding: 0%;
